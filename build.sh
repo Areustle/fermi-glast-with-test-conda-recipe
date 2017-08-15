@@ -48,5 +48,24 @@ export XERCES="xerces-c"
     CPPUNIT=${CPPUNIT} \
     FFTW=${FFTW} \
     XERCES=${XERCES}
+    
+./hmake test\
+    EXT_EXEC_PFX=${PREFIX} \
+    EXT_BLD_EXEC_PFX=${PREFIX} \
+    HD_EXEC_PFX=${PREFIX} \
+    HD_TOP_EXEC_PFX=${PREFIX} \
+    HC_BLD_EXEC_PFX=${PREFIX} \
+    HC_EXEC_PFX=${PREFIX} \
+    CLHEP=${CLHEP} \
+    HOOPS=${HOOPS} \
+    PIL=${PIL} \
+    CFITSIO=${CFITSIO} \
+    READLINE=${READLINE} \
+    PYTHON_INC="-I${PREFIX}/include/${PYTHON}" \
+    CPPUNIT=${CPPUNIT} \
+    FFTW=${FFTW} \
+    XERCES=${XERCES}
 
 ./hmake install HD_EXEC_PFX=${PREFIX} HD_TOP_EXEC_PFX=${PREFIX}
+
+./hmake install-test HD_EXEC_PFX=${PREFIX} HD_TOP_EXEC_PFX=${PREFIX}
