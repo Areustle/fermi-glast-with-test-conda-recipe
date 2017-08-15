@@ -1,5 +1,5 @@
 package:
-  name: fermi-glast
+  name: fermi-glast-test
   version: "v11r5p3"
 
 source:
